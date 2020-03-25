@@ -6,6 +6,7 @@ const question = document.getElementById("question");
 const progress = document.getElementById("progress"); 
 const scoreCount = document.getElementById("scoreCount");
 const finalScore = document.getElementById("finalScore");
+const name = document.getElementById("exampleInputEmail1");
 
 
 const choiceA = document.getElementById("A");
