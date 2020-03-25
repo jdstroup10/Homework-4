@@ -1,11 +1,9 @@
 # Homework-4
 Repo for Homework 4 of UT boot camp
 
-<<<<<<< HEAD
-![Screenshot of the Project]
-=======
+
 ![Screenshot of the Project](https://github.com/jdstroup10/Homework-4/blob/master/Screen%20Shot%202020-03-24%20at%209.55.09%20PM.png)
->>>>>>> c81c470dd6a596ea0289c20dfe7216d8c21db9a9
+
 
 # 04 Web APIs: Code Quiz
 
