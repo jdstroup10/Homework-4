@@ -5,6 +5,7 @@ const quiz = document.getElementById("quiz");
 const question = document.getElementById("question");
 const progress = document.getElementById("progress"); 
 const scoreCount = document.getElementById("scoreCount");
+const finalScore = document.getElementById("finalScore");
 
 
 const choiceA = document.getElementById("A");
@@ -16,7 +17,7 @@ const choiceC = document.getElementById("C");
 
 
 
-var secondsLeft = 300;
+var secondsLeft = 30;
 
 function startTimer() {
   renderQuestion()
@@ -28,6 +29,7 @@ function startTimer() {
 
   
       if(secondsLeft === 0) {
+        
         clearInterval(timerInterval);
         sendMessage();
       }
@@ -36,7 +38,14 @@ function startTimer() {
   }
 
   function sendMessage()  {
-      timeEl.textContent = "TIME!";
+      timeEl.textContent = "Time up!";
+      document.getElementById("finalScore").textContent = "Your final score is: " + score;
+      document.getElementById("question").textContent = "";
+      document.getElementById("progress").textContent = "";
+      document.getElementById("scoreCount").textContent = "";
+      document.getElementById("A").textContent = "";
+      document.getElementById("B").textContent = "";
+      document.getElementById("C").textContent = "";
       //Move to score page
 
   }

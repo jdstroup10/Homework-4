@@ -55,9 +55,10 @@ function progressRender(){
 
 }
 function answerIsCorrect(){
+    
     document.getElementById("progress").textContent = "CORRECT!";
     score++;
-    document.getElementById("scoreCount").textContent = "Here is your current score " + score;
+    document.getElementById("scoreCount").textContent = "Here is your current score: " + score;
     
     //If answer is correct add 1 to score
     
@@ -65,6 +66,7 @@ function answerIsCorrect(){
 
 function answerIsWrong(){
     document.getElementById("progress").textContent = "INCORRECT!";
+    
 }
 
 //Function to check the answer goes here
@@ -83,8 +85,28 @@ function checkAnswer(answer){
         runningQuestionIndex++;
         renderQuestion();
     } else{
-        //scoreRender();
-        //Remember to write this function
+        document.getElementById("finalScore").textContent = "Your final score is: " + score;
+        document.getElementById("question").textContent = "";
+        document.getElementById("progress").textContent = "";
+        document.getElementById("scoreCount").textContent = "";
+        document.getElementById("A").textContent = "";
+        document.getElementById("B").textContent = "";
+        document.getElementById("C").textContent = "";
+
+       
+
+        
+        
+        
+
+
+        
+
+
+
+
+        
+        
     }
 }
 

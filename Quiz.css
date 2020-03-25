@@ -3,7 +3,12 @@
     margin-left: 50px;
 }
 
-#scoreCount{
+#scoreCount, #finalScore{
     font-size: 25px;
     margin-left: 50px;
+}
+
+#options{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
