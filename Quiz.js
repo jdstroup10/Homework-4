@@ -1,9 +1,52 @@
-var playButton = document.querySelector("#play");
+const playButton = document.querySelector("#play");
+const timeEl = document.querySelector(".time");
+const subHeaderText = document.getElementById("subHeader");
+const quiz = document.getElementById("quiz");
+const question = document.getElementById("question");
+const progress = document.getElementById("progress"); 
+const scoreCount = document.getElementById("scoreCount");
+
+
+const choiceA = document.getElementById("A");
+const choiceB = document.getElementById("B");
+const choiceC = document.getElementById("C");
+
+
+
+
+
+
+var secondsLeft = 300;
 
 function startTimer() {
-    console.log("hello");
-    
+  renderQuestion()
+  // Placing the function from questions.js here renders the first question upon clicking start button
+    var timerInterval = setInterval(function() {
+      secondsLeft--;
+      timeEl.textContent = secondsLeft + " Seconds Left";
+      subHeaderText.textContent = "Go!";
+
+  
+      if(secondsLeft === 0) {
+        clearInterval(timerInterval);
+        sendMessage();
+      }
+  
+    }, 1000);
+  }
+
+  function sendMessage()  {
+      timeEl.textContent = "TIME!";
+      //Move to score page
+
+  }
+
+
+
+//function startTimer() {
+  //  console.log("hello");
+    //document.getElementById("play").innerHTML = "Hello";
     //setTime();
-}
+//}
 
 playButton.addEventListener("click", startTimer);

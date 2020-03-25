@@ -27,11 +27,28 @@
     
     <section class="jumbotron text-center">
         <div class="container">
-          <h1>Welcome to my Quiz!</h1>
-          <p class="lead text-muted">You are about to answer a short series of questions for my quiz. Are you ready to start?</p>
+          <h1 class="time">Welcome to my Quiz!</h1>
+          <p  id="subHeader" class="lead text-muted">You are about to answer a short series of questions for my quiz. Are you ready to start?</p>
           <a href="#"  id="play" class="playButton">Click here to start!</a>
         </div>
       </section>
+
+      <div id="quiz">
+          <div id="question"><p></p></div>
+
+          <div id="options">
+              <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+              <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+              <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+          </div>
+          <div id="progress" class="prog"></div>
+      </div>
+
+      <div id="scoreCount"></div>
+
+
+
+      
    
 
       
@@ -48,5 +65,7 @@
 
 
 <script src="Quiz.js"></script>
+<script src="Questions.js"></script>
+
 
 </body>
